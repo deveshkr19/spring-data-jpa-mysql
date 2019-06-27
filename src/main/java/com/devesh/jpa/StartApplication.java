@@ -35,6 +35,7 @@ public class StartApplication implements CommandLineRunner {
         System.out.println("\nfindAll()");
         repository.findAll().forEach(x -> System.out.println(x));
 
+        	//find by ID
         System.out.println("\nfindById(1L)");
         repository.findById(1l).ifPresent(x -> System.out.println(x));
         //find by node
